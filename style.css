@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Poppins:wght@600&family=Silkscreen&display=swap');
+
+/* variable */
+:root{
+    --c:rgb(4, 1, 53);
+}
+/* akhir variable */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+   
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color:var(--c);
+    min-height: 2000px;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    text-transform: capitalize;
+    position: fixed;
+    top:0;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    z-index: 99;
+}
+nav .nama{
+    color: aliceblue;
+    font-family: 'DynaPuff', cursive;
+    font-size:1.8em;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+justify-content: center;
+margin: 20px;
+padding:5px 10px ;
+transition: 0.6s;
+
+
+
+}
+nav ul li a:hover{
+    box-shadow: 0 0 5px aqua, 0 0 10px aqua;
+    color:aqua;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+nav button{
+    display: none;
+    width: 20px;
+    height: 20px;
+    box-shadow: inset 0 0 10px black;
+    border-radius: 5px;
+    border: none;
+    background-color: aqua;
+}
+
+/* profile */
+.profile{
+    text-transform: capitalize;
+    background-image: url('img/bg.jpeg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top:2% ;
+position: relative;
+
+}
+
+.saya{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 60vh;
+    margin-top: 100px;
+    text-transform: uppercase;
+}
+.saya .foto .rr{
+margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    box-shadow:0 0 5px aqua, 0 0 5px aqua, 0 0 7px aqua, 0 0 50px aqua, inset 0 0 10px black;
+animation: grkk ease-in-out infinite;
+animation-duration: 5s;
+}
+@keyframes grkk{
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+
+
+.saya .nn{
+    font-size: 45px;
+    color: white;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgb(39, 39, 39);
+}
+.saya strong{
+    color:aqua;
+}
+.saya .mhs{
+
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-shadow:2px 2px black ;
+}
+.profile a{
+text-decoration: none;
+margin-top: 50px;
+color: aliceblue;
+padding: 5px 10px;
+border-radius: 15px;
+transition: 0.5s all;
+background-color: rgb(70, 70, 70);
+box-shadow: 0 0 2px rgb(73,73,73),0 0 1px rgb(73, 73, 73),inset -7px -10px 10px black, inset 5px 5px 10px black;
+
+}
+.profile a:hover{
+    box-shadow: 0 0 5px aqua, 0 0 10px aqua;
+    color:aqua;
+    background-color: rgb(0, 0, 0);
+    }
+/* about */
+#about{
+    padding-top: 20px;
+    /* background: linear-gradient(100deg, rgb(0, 0, 0),rgb(0, 81, 255),#a200ff , #000); */
+    background-color: black;
+    padding-bottom:5% ;
+}
+#about h1{
+border-bottom: 2px solid aqua;
+    color: white;
+    font-size: 2.5em;
+    text-shadow:0 0 5px aqua;
+    text-align: center;
+}
+.all-about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fabt{
+background-image: url('img/jagusya.png');
+box-shadow:0 0 5px aqua, 0 0 5px aqua, 0 0 7px aqua, 0 0 50px aqua, inset 0 0 10px black;
+background-size: cover;
+background-repeat: no-repeat;
+width: 300px;
+height: 300px;
+padding: 20px;
+margin-top: 50px;
+border-radius: 100px;
+
+}
+.text{
+
+    width: 500px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+color: white;
+text-shadow:1px 1px  5px aqua;
+  
+}
+
+/* project */
+#project{
+    text-transform: capitalize;
+    width: 100%;
+    height: 100vh;
+}
+#project h1{
+    border-bottom: 2px solid aqua;
+    color: white;
+    font-size: 2.5em;
+    text-shadow:0 0 5px aqua;
+    text-align: center;
+    margin:0 0 50px 0;
+}
+.all-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+.border-card1{
+    width: 250px;
+    height: 300px;
+    box-shadow:0 0 10px aqua, 0 0 20px aqua, inset 0 0 10px black;
+    border-radius: 10px;
+    animation: gerakan ease-in-out infinite;
+    animation-duration: 5s;
+}
+@keyframes gerakan{
+    0%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+.border-card1::before{
+    content: '';
+    position: absolute;
+    top:-10px;
+    left:0;
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(160deg,rgb(255, 0, 255), aqua);
+    transform: skewX(5deg);
+    border-radius: 10px;
+} 
+.border-card1::after{
+    content: '';
+    position: absolute;
+    left:2px;
+    top: 10px;
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(160deg,rgb(255, 0, 255), aqua);
+    border-radius: 10px;
+    transform: skewX(5deg);
+} 
+.border-card2{
+    width: 250px;
+    height: 300px;
+    box-shadow:0 0 10px aqua, 0 0 20px aqua, inset 0 0 10px black;
+    border-radius: 10px;
+    animation: gerak ease-in-out infinite;
+    animation-duration: 5s;
+}
+@keyframes gerak{
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+.border-card2::before{
+    content: '';
+    position: absolute;
+    /* top: 1295px; */
+    top:-10px;
+    left:0;
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(160deg,rgb(255, 0, 255), aqua);
+    transform: skewX(5deg);
+    border-radius: 10px;
+} 
+.border-card2::after{
+    content: '';
+    position: absolute;
+    left:2px;
+    top: 10px;
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(160deg,rgb(255, 0, 255), aqua);
+    border-radius: 10px;
+    transform: skewX(5deg);
+}  
+
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:var(--c);
+    z-index: 3;
+    border-radius: 10px;
+    box-shadow: inset -10px -5px 30px black,inset 20px 10px 20px black  ; 
+}
+.icn{
+
+    width: 100%;
+    height: 100%;
+
+}
+.ic{
+display: flex;
+    margin:0 85px;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    color: white;
+  background-color: var(--b);
+}
+.iconn{
+margin: 20px;
+ font-size: 50px;
+
+
+}
+.text-icn{
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(212, 212, 212);
+}
+.icn a{
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    text-decoration: none;
+color: rgb(0, 0, 0);
+padding: 7px 10px;
+border-radius: 15px;
+transition: 0.5s all;
+background-color:var(--b);
+box-shadow: 0 0 2px rgb(73,73,73),0 0 1px rgb(73, 73, 73),inset -2px -5px 4px black, inset 5px 5px 5px black;
+
+}
+
+/* contact */
+#contact{
+    
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact h1{
+    text-transform: capitalize;
+    border-bottom: 2px solid aqua;
+    color: white;
+    font-size: 2.5em;
+    text-shadow:0 0 5px aqua;
+    text-align: center;
+    margin:0 0 50px 0;
+}
+.full-contact{
+    position: relative;
+    width: 700px;
+    height: 600px;
+transform: skewY(10deg);
+    background: linear-gradient(160deg,rgb(132, 0, 255),red);
+}
+.bungkus{
+    position: absolute;
+    top: 50px;
+    left:-50px;
+    width: 800px;
+    height:500px;
+    background: linear-gradient(160deg,rgb(132, 0, 255),red);
+    transform: skewY(-10deg);
+
+}
+.masuk{
+    position: absolute;
+    top:-1px;
+    left:5px;
+    width: 790px;
+    height:510px;
+    background-color:var(--c);
+    transform: skewY(0deg);
+}
+.bungkus .masuk form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.bungkus .masuk label{
+    margin: 20px 0;
+    color: var(--cl);
+    text-shadow: 0 0  2px rgb(0, 0, 0);
+
+}
+.bungkus .masuk form input{
+  border-radius: 20px;
+    width: 400px;
+    height: 30px;
+    padding-left: 20px;
+    outline: none;
+    background-color: var(--c);
+    border: 3px solid var(--cl);
+    box-shadow: 0 0 10px var(--cl),0 0 20px var(--cl),0 0 50px var(--cl);
+    color: white;
+}
+.bungkus .masuk form .pesan{
+    width: 400px;
+    height: 100px;
+   padding-bottom: 20px;
+    outline: none;
+    background-color:var(--c);
+    color: white;
+    border: 3px solid var(--clr);
+    box-shadow: 0 0 10px var(--clr),0 0 20px var(--clr),0 0 50px var(--clr);
+}
+.bungkus .masuk button{
+    outline: none;
+    border:none;
+    margin-top: 50px;
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background: linear-gradient(160deg,rgb(132, 0, 255),red);
+    box-shadow:inset 0 0 10px black;
+}
+
+/* chat */
+.chat{
+    position: fixed;
+    bottom:20px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(0, 255, 13);
+    box-shadow: 0 0 10px rgb(0, 255, 13),0 0 30px rgb(0, 255, 13),inset 0 0 25px black,inset 0 0 10px black,inset 0 0 15px black,0 0 20px black;
+}
+.chat a{
+    position: absolute;
+    top:-2px;
+    left: 10px;
+    text-decoration: none;
+color: white;
+font-size: 35px;
+font-weight: 600;
+}
+
+
+/* mobile device */
+@media screen and (max-width:465px) {
+    nav{
+        width: 100%;
+        transition: 1s all;
+    }
+
+    nav ul{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: block;
+        width: 45%;
+        height: auto;
+        background-color: rgba(0, 0, 0,0.7);
+        box-shadow:10px 10px 10px aqua,10px 10px 10px aqua,20px 10px 10px aqua, inset 0 0 10px black;
+        padding: 20px;
+        transform: translateX(100%);
+        transition: 0.4s all;
+       
+    }
+
+    nav ul li a{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       color: aliceblue;
+    }
+
+    nav button{
+        display: block;
+        transition: 0.8s all;
+    }
+
+    .warna{
+        background-color: black;
+        color: white;
+        box-shadow:0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 50px aqua, inset 0 0 10px black;
+    }
+
+    .geser{
+        transform: translateX(0); 
+    }
+
+    .active{
+        box-shadow:0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua, 0 0 50px aqua, inset 0 0 10px black;
+       
+    }
+
+    .nm{
+
+        color: rgb(255, 255, 255);
+        text-shadow:1px 1px 7px aqua; 
+    }
+
+    .all-about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fabt{
+        width: 200px;
+        height: 200px;  
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+   .border-card1{
+    margin-bottom: 30px;
+   }
+   .border-card2{
+    margin-bottom: 30px;
+   }
+
+   @keyframes gerak{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes gerakan{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+#contact{
+    position: relative;
+}
+#contact h1{
+    z-index:10;
+ position: absolute;
+ top:400px;
+    border-bottom: 2px solid aqua;
+    color: white;
+    font-size: 2.5em;
+    text-shadow:0 0 5px aqua;
+    text-align: center;
+    margin:0 0 50px 0;
+}
+.full-contact{
+    margin-top:400px ;
+    position: relative;
+    width: 700px;
+    height: 600px;
+transform: skewY(10deg);
+    background: linear-gradient(160deg,rgb(132, 0, 255),red);
+}
+.bungkus{
+    position: absolute;
+    top: 50px;
+    left:-50px;
+    width: 800px;
+    height:500px;
+    background: linear-gradient(160deg,rgb(132, 0, 255),red);
+    transform: skewY(-10deg);
+
+}
+.masuk{
+    position: absolute;
+    top:-1px;
+    left:5px;
+    width: 790px;
+    height:510px;
+    background-color:var(--c);
+    transform: skewY(0deg);
+}
+.bungkus .masuk form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.bungkus .masuk label{
+    margin: 20px 0;
+    color: var(--cl);
+
+}
+.bungkus .masuk form input{
+  border-radius: 20px;
+    width: 300px;
+    height: 30px;
+    padding-left: 20px;
+    outline: none;
+    background-color: var(--c);
+    border: 3px solid var(--cl);
+    box-shadow: 0 0 10px var(--cl),0 0 20px var(--cl),0 0 50px var(--cl);
+    color: white;
+}
+.bungkus .masuk form .pesan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100px;
+   padding-bottom: 20px;
+    outline: none;
+    background-color:var(--c);
+    color: white;
+    border: 3px solid var(--clr);
+
+}
+.bungkus .masuk button{
+    margin-top: 50px;
+    width: 100px;
+    padding: 5px 10px;
+}
+
+
+}
+       
+    
